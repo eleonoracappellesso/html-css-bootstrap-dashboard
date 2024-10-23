@@ -59,12 +59,12 @@
         <h1 class="fw-normal">Nuovo Libro</h1>
         <form class="row g-3">
             <dic class="col-6">
-                <label for="NomeAutore" class="form-label">Nome autore</label>
+                <label for="NomeAutore" class="form-label">Nome Autore</label>
                 <input type="text" class="form-control" id="NomeAutore" name="NomeAutore"
                     placeholder="Inserisci il nome dell'autore" required>
             </dic>
             <div class="col-6">
-                <label for="CognomeAutore" class="form-label">Cognome autore</label>
+                <label for="CognomeAutore" class="form-label">Cognome Autore</label>
                 <input type="text" class="form-control" id="CognomeAutore" name="CognomeAutore"
                     placeholder="Inserisci il cognome dell'autore" required>
             </div>
@@ -89,9 +89,21 @@
                 </select>
             </div>
             <div class="col-12 col-lg-4">
-
+                <label for="Pubblicazione" class="form-label">Anno di Pubblicazione</label>
+                <input type="text" class="form-control" id="Pubblicazione" name="Pubblicazione"
+                    placeholder="Inserisci l'anno" min="1300" max="2050">
             </div>
-            <div class="col-12 col-lg-4"></div>
+            <div class="col-12 col-lg-4">
+                <label for="Isbn" class="form-label">ISBN#</label>
+                <input type="text" class="form-control" id="Isbn" name="Isbn" placeholder="Inserisci il codice ISBN#"
+                    maxlength="13">
+            </div>
+            <div class="col-12"><hr></div>
+            <div class="col-12">
+                <label for="Note" class="form-label">Note</label>
+                <textarea class="form-control" id="Note" name="Note" placeholder="Inserisci eventuali note sul libro" rows="3">
+                </textarea>
+            </div>
         </form>
 
     </main>
